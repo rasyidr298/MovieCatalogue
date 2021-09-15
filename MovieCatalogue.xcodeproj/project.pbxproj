@@ -95,10 +95,10 @@
 		845E9F3426F1A59D003EEB0F /* MovieCatalogue */ = {
 			isa = PBXGroup;
 			children = (
-				845E9F3526F1A59D003EEB0F /* MovieCatalogueApp.swift */,
-				845E9F3726F1A59D003EEB0F /* ContentView.swift */,
-				845E9F3926F1A5A2003EEB0F /* Assets.xcassets */,
-				845E9F3E26F1A5A2003EEB0F /* Info.plist */,
+				845E9F6326F1AC93003EEB0F /* SuportingFiles */,
+				845E9F6226F1AC7C003EEB0F /* Feature */,
+				845E9F6126F1AC76003EEB0F /* Core */,
+				845E9F6026F1AC71003EEB0F /* App */,
 				845E9F3B26F1A5A2003EEB0F /* Preview Content */,
 			);
 			path = MovieCatalogue;
@@ -128,6 +128,38 @@
 				845E9F5426F1A5A2003EEB0F /* Info.plist */,
 			);
 			path = MovieCatalogueUITests;
+			sourceTree = "<group>";
+		};
+		845E9F6026F1AC71003EEB0F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				845E9F3526F1A59D003EEB0F /* MovieCatalogueApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		845E9F6126F1AC76003EEB0F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		845E9F6226F1AC7C003EEB0F /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				845E9F3726F1A59D003EEB0F /* ContentView.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		845E9F6326F1AC93003EEB0F /* SuportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				845E9F3926F1A5A2003EEB0F /* Assets.xcassets */,
+				845E9F3E26F1A5A2003EEB0F /* Info.plist */,
+			);
+			path = SuportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,7 +453,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MovieCatalogue/Preview Content\"";
 				DEVELOPMENT_TEAM = PH4M8U772M;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MovieCatalogue/Info.plist;
+				INFOPLIST_FILE = MovieCatalogue/SuportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,7 +475,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MovieCatalogue/Preview Content\"";
 				DEVELOPMENT_TEAM = PH4M8U772M;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MovieCatalogue/Info.plist;
+				INFOPLIST_FILE = MovieCatalogue/SuportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
