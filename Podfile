@@ -6,6 +6,11 @@ target 'MovieCatalogue' do
   use_frameworks!
 
   # Pods for MovieCatalogue
+  pod 'Alamofire'
+  pod 'SwiftLint'
+  pod 'SDWebImageSwiftUI'
+#  pod 'RealmSwift'
+# pod 'lottie-ios'
 
   target 'MovieCatalogueTests' do
     inherit! :search_paths

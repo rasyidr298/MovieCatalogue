@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct MovieCatalogueApp: App {
+    
+    private let homeUseCase = Injection().provideHome()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(HomeViewModel(homeUseCase: homeUseCase))
         }
     }
 }
