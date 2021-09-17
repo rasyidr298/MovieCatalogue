@@ -11,28 +11,36 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     
-    private let homeUseCase: HomeUseCase
+    enum State {
+      case idle
+      case loading
+      case error(Error)
+      case loaded
+    }
     
+    @Published private(set) var state = State.idle
+    @Published var popularMovies: [MovieModel] = []
+    @Published var nowPlayingMovies: [MovieModel] = []
+    @Published var topRatedMovies: [MovieModel] = []
+    
+    private var homeRouter = HomeRouter()
     private var cancellables: Set<AnyCancellable> = []
     
-    @Published var movies: [MovieModel] = []
-    @Published var errorMessage: String = ""
-    @Published var loadingState: Bool = false
-    
+    private let homeUseCase: HomeUseCase
     init(homeUseCase: HomeUseCase) {
         self.homeUseCase = homeUseCase
     }
     
     func getPopularMovie(page: Int) {
-        loadingState = true
+//        loadingState = true
         homeUseCase.getPopularMovie(page: page)
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: {completion in
                 switch completion {
                 case .failure:
-                    self.errorMessage = String(describing: completion)
+//                    self.errorMessage = String(describing: completion)
                 case .finished:
-                    self.loadingState = false
+//                    self.loadingState = false
                 }
             }, receiveValue: { movies in
                 self.movies = movies

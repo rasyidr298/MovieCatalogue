@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class FavoriteViewModel: ObservableObject {
+    
+    let favoriteUseCase: FavoriteMoviesUseCase
+
+    init(favoriteUseCase: FavoriteMoviesUseCase) {
+        self.favoriteUseCase = favoriteUseCase
+    }
+    
+}
