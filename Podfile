@@ -9,7 +9,7 @@ target 'MovieCatalogue' do
   pod 'Alamofire'
   pod 'SwiftLint'
   pod 'SDWebImageSwiftUI'
-#  pod 'RealmSwift'
+  pod 'RealmSwift'
 # pod 'lottie-ios'
 
   target 'MovieCatalogueTests' do

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 // MARK: MovieModel
 struct MovieModel: Equatable, Identifiable {
     

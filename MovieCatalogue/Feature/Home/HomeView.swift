@@ -17,7 +17,9 @@ struct HomeView: View {
             ForEach(homeViewModel.movies) {movies in
                 Text(movies.title).padding()
             }
-            .onAppear {homeViewModel.searchMovie(page: 1, query: "naruto")}
+            .onAppear {
+                homeViewModel.getPopularMovie(page: 3)
+            }
         }
     }
     

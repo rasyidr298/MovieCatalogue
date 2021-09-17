@@ -12,6 +12,7 @@ import SwiftUI
 class HomeViewModel: ObservableObject {
     
     private let homeUseCase: HomeUseCase
+    
     private var cancellables: Set<AnyCancellable> = []
     
     @Published var movies: [MovieModel] = []
@@ -36,39 +37,6 @@ class HomeViewModel: ObservableObject {
             }, receiveValue: { movies in
                 self.movies = movies
                 print("popular movies : \(movies.count)")
-            })
-            .store(in: &cancellables)
-    }
-    
-    func getDetailMovie(idMovie: Int) {
-        homeUseCase.getDetailMovie(idMovie: idMovie)
-            .receive(on: RunLoop.main)
-            .sink(receiveCompletion: {completion in
-                switch completion {
-                case .failure:
-                    self.errorMessage = String(describing: completion)
-                case .finished:
-                    self.loadingState = false
-                }
-            }, receiveValue: { movies in
-                print("popular movies : \(movies)")
-            })
-            .store(in: &cancellables)
-    }
-    
-    func searchMovie(page: Int, query: String) {
-        homeUseCase.searchMovie(page: page, query: query)
-            .receive(on: RunLoop.main)
-            .sink(receiveCompletion: {completion in
-                switch completion {
-                case .failure:
-                    self.errorMessage = String(describing: completion)
-                case .finished:
-                    self.loadingState = false
-                }
-            }, receiveValue: { movies in
-                self.movies = movies
-                print("popular movies : \(movies)")
             })
             .store(in: &cancellables)
     }

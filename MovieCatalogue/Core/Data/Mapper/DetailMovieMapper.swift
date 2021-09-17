@@ -1,29 +1,13 @@
 //
-//  MovieMapper.swift
+//  DetailMovieMapper.swift
 //  MovieCatalogue
 //
-//  Created by Rasyid Ridla on 16/9/21.
+//  Created by Rasyid Ridla on 17/9/21.
 //
 
 import Foundation
 
-final class MovieMapper {
-    
-    // MARK: mapMovieResponsesToDomains
-    static func mapMovieToDomains(input response: [Movie]) -> [MovieModel] {
-        
-        return response.map {result in
-            return MovieModel(
-                id: result.id ?? 0,
-                title: result.title ?? "",
-                overview: result.overview ?? "",
-                voteAverage: result.voteAverage ?? 0,
-                posterPath: result.posterPath ?? "",
-                backdropPath: result.backdropPath ?? "",
-                releaseDate: result.releaseDate ?? ""
-            )
-        }
-    }
+final class DetailMovieMapper {
     
     // MARK: mapDetailMovieResponseToDomains
     static func mapDetailMovieResponseToDomains(movieResponse: DetailMovieResponse, creditResponse: CreditsResponse) -> DetailMovieModel {
@@ -52,7 +36,7 @@ final class MovieMapper {
             voteAverage: movieResponse.voteAverage ?? 0,
             voteCount: movieResponse.voteCount ?? 0,
             casts: casts, crews: crews ,
-            productionCompanies: productionCompanies 
+            productionCompanies: productionCompanies
         )
     }
     
@@ -71,4 +55,5 @@ final class MovieMapper {
     static func mapCrewsResponseToDomains(input response: CreditsResponse) -> [CrewModel] {
         return response.crew!.map { CrewModel(id: $0.id ?? 0, job: $0.job ?? "", name: $0.name ?? "", departement: $0.department ?? "", order: 0)}
     }
+    
 }

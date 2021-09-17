@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 // MARK: DetailMovieModel
 struct DetailMovieModel {
     let id: Int
@@ -56,7 +55,6 @@ struct DetailMovieModel {
         productionCompanies: [ProductionCompaniesModel(id: 1, logoPath: "", name: "", originalCountry: "")]
     )}
 }
-
 
 // MARK: GenreModel
 struct GenreModel: Identifiable {
