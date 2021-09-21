@@ -15,26 +15,9 @@ struct SearchView: View {
     @State var heightScreen = UIScreen.main.bounds.height
     
     var body: some View {
-        switch searchVieModel.state {
-        case .idle:
-            VStack {
-                SearchField()
-            }.frame(width: widthScreen, height: heightScreen, alignment: .top)
-        case .loading:
-            VStack {
-                SearchField()
-                SearchResult()
-            }.frame(width: widthScreen, height: heightScreen, alignment: .top)
-        case .error(let error):
-            VStack {
-                SearchField()
-                Text("Error \(error.localizedDescription)")
-            }.frame(width: widthScreen, height: heightScreen, alignment: .top)
-        case .loaded:
-            VStack {
-                SearchField()
-                SearchResult()
-            }.frame(width: widthScreen, height: heightScreen, alignment: .top)
+        VStack {
+            SearchField()
+            SearchResult()
         }
     }
 }
@@ -111,7 +94,7 @@ struct SearchField: View {
                         RoundedRectangle(cornerRadius: 10.0).strokeBorder(Color.black, style: StrokeStyle(lineWidth: 1.0))
                     }
                 )
-        }.padding(EdgeInsets(top: 50, leading: 15, bottom: 20, trailing: 15))
+        }.padding(EdgeInsets(top: 20, leading: 15, bottom: 10, trailing: 15))
         
     }
     
