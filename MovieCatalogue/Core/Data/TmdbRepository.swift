@@ -100,7 +100,7 @@ extension TmdbRepository: TmdbRepositoryProtocol {
     
     // MARK: Local - movieIsFavorite
     func movieIsFavorite(from movie: MovieModel) -> AnyPublisher<Bool, Error> {
-        return self.local.deleteMovieFromFavorite(from: MovieMapper.mapMovieDomainsToEntities(input: movie)
+        return self.local.movieIsFavorite(from: MovieMapper.mapMovieDomainsToEntities(input: movie)
         ).eraseToAnyPublisher()
     }
 }

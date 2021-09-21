@@ -61,8 +61,7 @@ extension LocaleDataSource: LocaleDataSourceProtocol {
             } else {
                 completion(.failure(DatabaseError.invalidInstance))
             }
-        }
-        .eraseToAnyPublisher()
+        }.eraseToAnyPublisher()
     }
     
     // MARK: deleteMovieFromFavorite

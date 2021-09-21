@@ -9,15 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @EnvironmentObject var viewRouter: ViewRouter
+    
     var body: some View {
-        TabView {
-            
+        
+        switch viewRouter.currentPage {
+        case .homePageView:
             HomeView()
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
-                }
-            
+        case .detailPageView(let movie):
+            DetailMovieView(detailViewModel: DetailMovieViewModel(detailUseCase: Injection().provideDetail(movie: movie)))
+        case .searchPageView:
+            SearchView()
+        case .favoritePageViwe:
+            FavoriteView()
+        case .profilePageView:
+            ProfileView()
         }
     }
 }

@@ -52,7 +52,7 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
                             )
                         }
                     }
-                print(requestURL)
+                print("\(requestURL)\(params)")
             }
         }.eraseToAnyPublisher()
     }
@@ -83,7 +83,7 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
                             )
                         }
                     }
-                print(requestURL)
+                print("\(requestURL)\(params)")
             }
         }.eraseToAnyPublisher()
     }
@@ -114,7 +114,7 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
                             )
                         }
                     }
-                print(requestURL)
+                print("\(requestURL)\(params)")
             }
         }.eraseToAnyPublisher()
     }
@@ -146,7 +146,7 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
                             )
                         }
                     }
-                print(requestURL)
+                print("\(requestURL)\(params)")
             }
         }.eraseToAnyPublisher()
     }
@@ -176,7 +176,7 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
                             )
                         }
                     }
-                print(requestURL)
+                print("\(requestURL)\(params)")
             }
         }.eraseToAnyPublisher()
     }
@@ -206,7 +206,7 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
                             )
                         }
                     }
-                print(requestURL)
+                print("\(requestURL)\(params)")
             }
         }.eraseToAnyPublisher()
     }

@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct FavoriteView: View {
+    
+    @EnvironmentObject var viewRouter: ViewRouter
+    @EnvironmentObject var favoriteVieModel: FavoriteViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical, showsIndicators: false) {
+            
+            ForEach(favoriteVieModel.favoriteMovies) {movies in
+                FavoriteCard(movie: movies).onTapGesture {
+                    withAnimation { viewRouter.currentPage = .detailPageView(movie: movies)}
+                }
+            }
+            
+        }.onAppear {
+            favoriteVieModel.getFavoriteMovies()
+            print(favoriteVieModel.favoriteMovies)
+        }
     }
 }
 

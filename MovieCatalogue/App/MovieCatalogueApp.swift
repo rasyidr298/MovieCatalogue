@@ -10,16 +10,13 @@ import SwiftUI
 @main
 struct MovieCatalogueApp: App {
     
-    private let homeUseCase = Injection().provideHome()
-    private let favUseCase = Injection().provideFavorite()
-    private let searchViewModel = Injection().provideSearch()
-    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(HomeViewModel(homeUseCase: homeUseCase))
-                .environmentObject(FavoriteViewModel(favoriteUseCase: favUseCase))
-                .environmentObject(SearchViewModel(searchUseCase: searchViewModel))
+                .environmentObject(HomeViewModel(homeUseCase: Injection().provideHome()))
+                .environmentObject(FavoriteViewModel(favoriteUseCase: Injection().provideFavorite()))
+                .environmentObject(SearchViewModel(searchUseCase: Injection().provideSearch()))
+                .environmentObject(ViewRouter())
         }
     }
 }
