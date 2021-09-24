@@ -1,5 +1,13 @@
+before_install:
+  - gem install cocoapods
+install:
+  - brew update && brew upgrade swiftlint
+  - pod install
 language: swift
-osx_image: xcode12.5 
-xcode_project: MovieCatalogue.xcodeproj 
+osx_image: xcode12.5
+xcode_workspace: MovieCatalogue.xcworkspace
 xcode_scheme: MovieCatalogue
 xcode_destination: platform=iOS Simulator,OS=14.5,name=iPhone 11
+script:
+ - swiftlint
+ - xcodebuild -workspace 'MovieCatalogue.xcworkspace' -scheme 'MovieCatalogue' -destination 'platform=iOS Simulator,OS=14.5,name=iPhone 11'
