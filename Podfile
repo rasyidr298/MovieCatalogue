@@ -10,7 +10,6 @@ target 'MovieCatalogue' do
   pod 'SwiftLint'
   pod 'SDWebImageSwiftUI'
   pod 'RealmSwift'
-# pod 'lottie-ios'
 
   target 'MovieCatalogueTests' do
     inherit! :search_paths
