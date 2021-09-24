@@ -6,8 +6,28 @@
 	<dict>
 		<key>MovieCatalogue.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>845E9F3126F1A59D003EEB0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>845E9F4226F1A5A2003EEB0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>845E9F4D26F1A5A2003EEB0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
