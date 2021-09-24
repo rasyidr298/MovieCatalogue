@@ -13,7 +13,7 @@ class ViewRouter: ObservableObject {
         case homePageView
         case detailPageView(movie: MovieModel)
         case searchPageView
-        case favoritePageViwe
+        case favoritePageView
         case profilePageView
     }
     

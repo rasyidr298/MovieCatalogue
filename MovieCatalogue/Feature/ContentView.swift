@@ -20,7 +20,7 @@ struct ContentView: View {
             DetailMovieView(detailViewModel: DetailMovieViewModel(detailUseCase: Injection().provideDetail(movie: movie)))
         case .searchPageView:
             SearchView()
-        case .favoritePageViwe:
+        case .favoritePageView:
             FavoriteView()
         case .profilePageView:
             ProfileView()
