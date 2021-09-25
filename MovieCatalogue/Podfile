@@ -1,0 +1,56 @@
+platform :ios, '14.5'
+ 
+use_frameworks!
+workspace 'MovieCatalogue'
+
+target 'MovieCatalogue' do
+  pod 'Alamofire'
+  pod 'SwiftLint'
+  pod 'SDWebImageSwiftUI'
+  pod 'RealmSwift'
+#  pod 'Core'
+end
+
+target 'Common' do
+  project '../Common/Common'
+end
+
+target 'Core' do
+  project '../Core/Core'
+end
+
+target 'Movie' do
+#  pod 'Core'
+  project '../Movie/Movie'
+#  pod 'RealmSwift'
+#  pod 'Alamofire'
+end
+
+target 'Home' do
+  project '../Movie/Movie'
+  project '../Home/Home'
+#  pod 'RealmSwift'
+end
+
+target 'Detail' do
+  project '../Movie/Movie'	
+  project '../Detail/Detail'
+#  pod 'SDWebImageSwiftUI'
+end
+
+target 'Favorite' do
+  project '../Movie/Movie'
+  project '../Favorite/Favorite'
+#  pod 'SDWebImageSwiftUI'
+end
+
+target 'SearchMovie' do
+  project '../SearchMovie/SearchMovie'
+#  pod 'SDWebImageSwiftUI'
+end
+
+target 'Profile' do
+#  pod 'Core'
+  project '../Profile/Profile'
+#  pod 'RealmSwift'
+end
