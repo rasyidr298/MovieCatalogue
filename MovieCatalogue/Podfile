@@ -15,10 +15,6 @@ target 'Common' do
   project '../Common/Common'
 end
 
-target 'Core' do
-  project '../Core/Core'
-end
-
 target 'Movie' do
 #  pod 'Core'
   project '../Movie/Movie'

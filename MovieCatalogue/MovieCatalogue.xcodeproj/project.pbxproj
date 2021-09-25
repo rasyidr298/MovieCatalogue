@@ -47,8 +47,6 @@
 		8485298926F4A8C6009E0553 /* DetailMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485298826F4A8C6009E0553 /* DetailMovieView.swift */; };
 		84B690DF26FED89600F4F2A6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690D726FED89600F4F2A6 /* Common.framework */; };
 		84B690E026FED89600F4F2A6 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690D726FED89600F4F2A6 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		84B690E126FED89600F4F2A6 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690D826FED89600F4F2A6 /* Core.framework */; };
-		84B690E226FED89600F4F2A6 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690D826FED89600F4F2A6 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84B690E326FED89600F4F2A6 /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690D926FED89600F4F2A6 /* Detail.framework */; };
 		84B690E426FED89600F4F2A6 /* Detail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690D926FED89600F4F2A6 /* Detail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84B690E526FED89600F4F2A6 /* Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690DA26FED89600F4F2A6 /* Favorite.framework */; };
@@ -86,7 +84,6 @@
 				84B690EC26FED89600F4F2A6 /* Profile.framework in Embed Frameworks */,
 				84B690E026FED89600F4F2A6 /* Common.framework in Embed Frameworks */,
 				84B690EA26FED89600F4F2A6 /* Movie.framework in Embed Frameworks */,
-				84B690E226FED89600F4F2A6 /* Core.framework in Embed Frameworks */,
 				84B690E626FED89600F4F2A6 /* Favorite.framework in Embed Frameworks */,
 				84B690E826FED89600F4F2A6 /* Home.framework in Embed Frameworks */,
 				84B690E426FED89600F4F2A6 /* Detail.framework in Embed Frameworks */,
@@ -164,7 +161,6 @@
 				3275EA46C0D72BF735132C87 /* Pods_MovieCatalogue.framework in Frameworks */,
 				84B690E926FED89600F4F2A6 /* Movie.framework in Frameworks */,
 				84B690E526FED89600F4F2A6 /* Favorite.framework in Frameworks */,
-				84B690E126FED89600F4F2A6 /* Core.framework in Frameworks */,
 				84B690DF26FED89600F4F2A6 /* Common.framework in Frameworks */,
 				84B690E326FED89600F4F2A6 /* Detail.framework in Frameworks */,
 				84B690ED26FED89600F4F2A6 /* SearchMovie.framework in Frameworks */,
