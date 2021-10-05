@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		84B6905026FED32B00F4F2A6 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B6904E26FED32B00F4F2A6 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84D47276270C486100C1AF62 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D47275270C486100C1AF62 /* ViewRouter.swift */; };
+		84D47283270C573500C1AF62 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D47282270C573500C1AF62 /* Extension.swift */; };
+		84D47285270C575600C1AF62 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D47284270C575600C1AF62 /* Carousel.swift */; };
 		861D262540E6575AF9F1B48D /* Pods_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D947C38F620171F544C82CA /* Pods_Common.framework */; };
 /* End PBXBuildFile section */
 
@@ -17,6 +20,9 @@
 		84B6904B26FED32B00F4F2A6 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B6904E26FED32B00F4F2A6 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		84B6904F26FED32B00F4F2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D47275270C486100C1AF62 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		84D47282270C573500C1AF62 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = ../../../Home/Home/Extension.swift; sourceTree = "<group>"; };
+		84D47284270C575600C1AF62 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		B1B352B377605FA6C093B659 /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "../../../MovieCatalogue/Pods/Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,10 +67,21 @@
 		84B6904D26FED32B00F4F2A6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				84D47281270C570600C1AF62 /* SharedView */,
+				84D47275270C486100C1AF62 /* ViewRouter.swift */,
 				84B6904E26FED32B00F4F2A6 /* Common.h */,
 				84B6904F26FED32B00F4F2A6 /* Info.plist */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		84D47281270C570600C1AF62 /* SharedView */ = {
+			isa = PBXGroup;
+			children = (
+				84D47284270C575600C1AF62 /* Carousel.swift */,
+				84D47282270C573500C1AF62 /* Extension.swift */,
+			);
+			path = SharedView;
 			sourceTree = "<group>";
 		};
 		A2C089FFAD8B327C186CD169 /* Pods */ = {
@@ -181,6 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D47285270C575600C1AF62 /* Carousel.swift in Sources */,
+				84D47276270C486100C1AF62 /* ViewRouter.swift in Sources */,
+				84D47283270C573500C1AF62 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

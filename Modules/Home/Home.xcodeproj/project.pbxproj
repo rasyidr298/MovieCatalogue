@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844568F3270C38FA001953F6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844568F2270C38FA001953F6 /* HomeView.swift */; };
+		844568F4270C38FA001953F6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844568F1270C38FA001953F6 /* HomeViewModel.swift */; };
+		844568F8270C39D0001953F6 /* HomeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844568F7270C39D0001953F6 /* HomeCard.swift */; };
+		844568FD270C3A97001953F6 /* CarouselCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844568FC270C3A97001953F6 /* CarouselCard.swift */; };
 		84B6906526FED3B100F4F2A6 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B6906326FED3B100F4F2A6 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB946E870435384E8B235F99 /* Pods_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D90E0C00DABFE1717BA8A8 /* Pods_Home.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		701C50120CE85F953A484424 /* Pods-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.release.xcconfig"; path = "../../../MovieCatalogue/Pods/Target Support Files/Pods-Home/Pods-Home.release.xcconfig"; sourceTree = "<group>"; };
+		844568F1270C38FA001953F6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		844568F2270C38FA001953F6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		844568F7270C39D0001953F6 /* HomeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCard.swift; sourceTree = "<group>"; };
+		844568FC270C3A97001953F6 /* CarouselCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCard.swift; sourceTree = "<group>"; };
 		84B6906026FED3B100F4F2A6 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B6906326FED3B100F4F2A6 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		84B6906426FED3B100F4F2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,10 +71,30 @@
 		84B6906226FED3B100F4F2A6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				84D47280270C56E600C1AF62 /* Card */,
+				84D4727E270C56B700C1AF62 /* View */,
+				844568F1270C38FA001953F6 /* HomeViewModel.swift */,
 				84B6906326FED3B100F4F2A6 /* Home.h */,
 				84B6906426FED3B100F4F2A6 /* Info.plist */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		84D4727E270C56B700C1AF62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				844568F2270C38FA001953F6 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84D47280270C56E600C1AF62 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				844568FC270C3A97001953F6 /* CarouselCard.swift */,
+				844568F7270C39D0001953F6 /* HomeCard.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 		F1ED3E2D7F57B1A17C21FA65 /* Frameworks */ = {
@@ -120,6 +148,7 @@
 				TargetAttributes = {
 					84B6905F26FED3B100F4F2A6 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -181,6 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844568F8270C39D0001953F6 /* HomeCard.swift in Sources */,
+				844568FD270C3A97001953F6 /* CarouselCard.swift in Sources */,
+				844568F4270C38FA001953F6 /* HomeViewModel.swift in Sources */,
+				844568F3270C38FA001953F6 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB223DEEA6A7DFF326B1E282 /* Pods-Home.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PH4M8U772M;
@@ -329,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = id.RrDev.Home;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 701C50120CE85F953A484424 /* Pods-Home.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PH4M8U772M;

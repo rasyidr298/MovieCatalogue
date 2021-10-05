@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844568FF270C3B79001953F6 /* FavoriteVieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844568FE270C3B79001953F6 /* FavoriteVieModel.swift */; };
+		84456901270C3B7D001953F6 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456900270C3B7C001953F6 /* FavoriteView.swift */; };
+		84456903270C3B9D001953F6 /* FavoriteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456902270C3B9D001953F6 /* FavoriteCard.swift */; };
 		84B6908F26FED3C600F4F2A6 /* Favorite.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B6908D26FED3C600F4F2A6 /* Favorite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4F1CCD731598F02335F6250 /* Pods_Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8B1F94F4BE9E84CCC1F2A2 /* Pods_Favorite.framework */; };
 /* End PBXBuildFile section */
@@ -14,6 +17,9 @@
 /* Begin PBXFileReference section */
 		0D611354B72EF5A75C63ADFE /* Pods-Favorite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite.debug.xcconfig"; path = "../../../MovieCatalogue/Pods/Target Support Files/Pods-Favorite/Pods-Favorite.debug.xcconfig"; sourceTree = "<group>"; };
 		2A8B1F94F4BE9E84CCC1F2A2 /* Pods_Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844568FE270C3B79001953F6 /* FavoriteVieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVieModel.swift; sourceTree = "<group>"; };
+		84456900270C3B7C001953F6 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		84456902270C3B9D001953F6 /* FavoriteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCard.swift; sourceTree = "<group>"; };
 		84B6908A26FED3C600F4F2A6 /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B6908D26FED3C600F4F2A6 /* Favorite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Favorite.h; sourceTree = "<group>"; };
 		84B6908E26FED3C600F4F2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,10 +59,29 @@
 		84B6908C26FED3C600F4F2A6 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				84D4728C270C5EF900C1AF62 /* Card */,
+				84D4728B270C5EF500C1AF62 /* View */,
+				844568FE270C3B79001953F6 /* FavoriteVieModel.swift */,
 				84B6908D26FED3C600F4F2A6 /* Favorite.h */,
 				84B6908E26FED3C600F4F2A6 /* Info.plist */,
 			);
 			path = Favorite;
+			sourceTree = "<group>";
+		};
+		84D4728B270C5EF500C1AF62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84456900270C3B7C001953F6 /* FavoriteView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84D4728C270C5EF900C1AF62 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				84456902270C3B9D001953F6 /* FavoriteCard.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 		CCFC7008FF024A9820A18AC3 /* Pods */ = {
@@ -181,6 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84456901270C3B7D001953F6 /* FavoriteView.swift in Sources */,
+				84456903270C3B9D001953F6 /* FavoriteCard.swift in Sources */,
+				844568FF270C3B79001953F6 /* FavoriteVieModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

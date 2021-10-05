@@ -6,6 +6,13 @@
 //
 
 import SwiftUI
+import Movie
+import Common
+import Home
+import Detail
+import SearchMovie
+import Favorite
+import Profile
 
 struct ContentView: View {
     
@@ -17,7 +24,7 @@ struct ContentView: View {
         case .homePageView:
             HomeView()
         case .detailPageView(let movie):
-            DetailMovieView(detailViewModel: DetailMovieViewModel(detailUseCase: Injection().provideDetail(movie: movie)))
+            DetailMovieView(viewModel: DetailMovieViewModel(detailUseCase: Injection().provideDetail(movie: movie)))
         case .searchPageView:
             SearchView()
         case .favoritePageView:

@@ -8,24 +8,24 @@
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Common/Common.xcodeproj">
+      location = "group:../Modules/Common/Common.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Detail/Detail.xcodeproj">
+      location = "group:../Modules/Detail/Detail.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Favorite/Favorite.xcodeproj">
+      location = "group:../Modules/Favorite/Favorite.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Home/Home.xcodeproj">
+      location = "group:../Modules/Home/Home.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Movie/Movie.xcodeproj">
+      location = "group:../Modules/Movie/Movie.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Profile/Profile.xcodeproj">
+      location = "group:../Modules/Profile/Profile.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../SearchMovie/SearchMovie.xcodeproj">
+      location = "group:../Modules/SearchMovie/SearchMovie.xcodeproj">
    </FileRef>
 </Workspace>

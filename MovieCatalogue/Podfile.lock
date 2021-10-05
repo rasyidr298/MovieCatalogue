@@ -1,25 +1,28 @@
 PODS:
   - Alamofire (5.4.4)
-  - Realm (10.15.1):
-    - Realm/Headers (= 10.15.1)
-  - Realm/Headers (10.15.1)
-  - RealmSwift (10.15.1):
-    - Realm (= 10.15.1)
-  - SDWebImage (5.11.1):
-    - SDWebImage/Core (= 5.11.1)
-  - SDWebImage/Core (5.11.1)
+  - Core (0.0.2):
+    - RealmSwift
+  - Realm (10.16.0):
+    - Realm/Headers (= 10.16.0)
+  - Realm/Headers (10.16.0)
+  - RealmSwift (10.16.0):
+    - Realm (= 10.16.0)
+  - SDWebImage (5.12.0):
+    - SDWebImage/Core (= 5.12.0)
+  - SDWebImage/Core (5.12.0)
   - SDWebImageSwiftUI (2.0.2):
     - SDWebImage (~> 5.10)
   - SwiftLint (0.44.0)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 5.2)
+  - Core (from `https://github.com/rasyidr298/MovieCatalogueCore.git`)
   - RealmSwift
   - SDWebImageSwiftUI
   - SwiftLint
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Realm
     - RealmSwift
@@ -27,14 +30,24 @@ SPEC REPOS:
     - SDWebImageSwiftUI
     - SwiftLint
 
+EXTERNAL SOURCES:
+  Core:
+    :git: https://github.com/rasyidr298/MovieCatalogueCore.git
+
+CHECKOUT OPTIONS:
+  Core:
+    :commit: 2d2fb046e114dba14a51ff6ae3124a1f4595ab06
+    :git: https://github.com/rasyidr298/MovieCatalogueCore.git
+
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
-  Realm: fbcbde2620d51623cc5b18e28f5b165c39abef52
-  RealmSwift: e4bea8e42efad3d543aea23b56504069c6faaea2
-  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  Core: 6fe95d2c444ef49d204cacc39312d6c73559f097
+  Realm: b6027801398f3743fc222f096faa85281b506e6c
+  RealmSwift: b02a3d0e4947955da960b642c98ad3a461fc4e70
+  SDWebImage: 4ea20cca2986adc5aacde07aa686742fd4c67a37
   SDWebImageSwiftUI: 8a3923c95108312b03a599ec1498754af55a6819
   SwiftLint: e96c0a8c770c7ebbc4d36c55baf9096bb65c4584
 
-PODFILE CHECKSUM: 49063707651234a9902d351f728a39c4b7aac0b9
+PODFILE CHECKSUM: 5f1cb5f6f0190fb29fe66721959a4c6e69e82da5
 
 COCOAPODS: 1.10.2

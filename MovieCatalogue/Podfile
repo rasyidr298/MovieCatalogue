@@ -1,52 +1,62 @@
-platform :ios, '14.5'
- 
+#source 'https://github.com/rasyidr298/MovieCataologuePodspecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.1'
+
 use_frameworks!
 workspace 'MovieCatalogue'
 
 target 'MovieCatalogue' do
-  pod 'Alamofire'
+  pod 'Core', :git => 'https://github.com/rasyidr298/MovieCatalogueCore.git'
+  pod 'Alamofire', '~> 5.2'
   pod 'SwiftLint'
   pod 'SDWebImageSwiftUI'
   pod 'RealmSwift'
-#  pod 'Core'
 end
 
 target 'Common' do
-  project '../Common/Common'
+  project '../Modules/Common/Common'
+  pod 'SDWebImageSwiftUI'
 end
 
 target 'Movie' do
-#  pod 'Core'
-  project '../Movie/Movie'
-#  pod 'RealmSwift'
-#  pod 'Alamofire'
+  pod 'Core', :git => 'https://github.com/rasyidr298/MovieCatalogueCore.git'
+  project '../Modules/Movie/Movie'
+  pod 'RealmSwift'
+  pod 'Alamofire', '~> 5.2'
 end
 
 target 'Home' do
-  project '../Movie/Movie'
-  project '../Home/Home'
-#  pod 'RealmSwift'
+  project '../Modules/Home/Home'
+  pod 'RealmSwift'
+  pod 'SDWebImageSwiftUI'
 end
 
 target 'Detail' do
-  project '../Movie/Movie'	
-  project '../Detail/Detail'
-#  pod 'SDWebImageSwiftUI'
+  project '../Modules/Detail/Detail'
+  pod 'SDWebImageSwiftUI'
 end
 
 target 'Favorite' do
-  project '../Movie/Movie'
-  project '../Favorite/Favorite'
-#  pod 'SDWebImageSwiftUI'
+  project '../Modules/Favorite/Favorite'
+  pod 'SDWebImageSwiftUI'
 end
 
 target 'SearchMovie' do
-  project '../SearchMovie/SearchMovie'
-#  pod 'SDWebImageSwiftUI'
+  project '../Modules/SearchMovie/SearchMovie'
+  pod 'SDWebImageSwiftUI'
 end
 
 target 'Profile' do
-#  pod 'Core'
-  project '../Profile/Profile'
-#  pod 'RealmSwift'
+  project '../Modules/Profile/Profile'
+  pod 'RealmSwift'
 end
+
+ post_install do |pi|
+     pi.pods_project.targets.each do |t|
+       t.build_configurations.each do |config|
+         config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.1'
+       end
+     end
+ end
