@@ -1,8 +1,11 @@
 before_install:
   - gem install cocoapods
+  - pod repo update
 install:
   - brew update && brew upgrade swiftlint
-  - pod install
+  - cd MovieCatalogue
+  - pod setup
+  - pod install --verbose
 language: swift
 osx_image: xcode12.5
 xcode_workspace: MovieCatalogue.xcworkspace
