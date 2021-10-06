@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40D412D2F95D9A645B19CE18 /* Pods_MovieCatalogue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AFA9D4F4EA6E817537F4A2 /* Pods_MovieCatalogue.framework */; };
 		845E9F3626F1A59D003EEB0F /* MovieCatalogueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E9F3526F1A59D003EEB0F /* MovieCatalogueApp.swift */; };
 		845E9F3826F1A59D003EEB0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E9F3726F1A59D003EEB0F /* ContentView.swift */; };
 		845E9F3A26F1A5A2003EEB0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845E9F3926F1A5A2003EEB0F /* Assets.xcassets */; };
 		845E9F3D26F1A5A2003EEB0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845E9F3C26F1A5A2003EEB0F /* Preview Assets.xcassets */; };
-		84B690DF26FED89600F4F2A6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690D726FED89600F4F2A6 /* Common.framework */; };
-		84B690E026FED89600F4F2A6 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690D726FED89600F4F2A6 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		84B690E326FED89600F4F2A6 /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690D926FED89600F4F2A6 /* Detail.framework */; };
-		84B690E526FED89600F4F2A6 /* Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690DA26FED89600F4F2A6 /* Favorite.framework */; };
-		84B690E726FED89600F4F2A6 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690DB26FED89600F4F2A6 /* Home.framework */; };
-		84B690E926FED89600F4F2A6 /* Movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690DC26FED89600F4F2A6 /* Movie.framework */; };
-		84B690EB26FED89600F4F2A6 /* Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690DD26FED89600F4F2A6 /* Profile.framework */; };
-		84B690ED26FED89600F4F2A6 /* SearchMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B690DE26FED89600F4F2A6 /* SearchMovie.framework */; };
-		AF52A2A3AD566E173ED25F46 /* Pods_MovieCatalogue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A831FDD7325679EB78DC2A79 /* Pods_MovieCatalogue.framework */; };
+		84F6AC15270D8F92000E9160 /* Movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC14270D8F92000E9160 /* Movie.framework */; };
+		84F6AC16270D8F92000E9160 /* Movie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC14270D8F92000E9160 /* Movie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F6AC19270D8FF5000E9160 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC18270D8FF5000E9160 /* Common.framework */; };
+		84F6AC1A270D8FF5000E9160 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC18270D8FF5000E9160 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F6AC1C270D906B000E9160 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC1B270D906B000E9160 /* Home.framework */; };
+		84F6AC1D270D906B000E9160 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC1B270D906B000E9160 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F6AC22270D90B9000E9160 /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC1E270D90B9000E9160 /* Detail.framework */; };
+		84F6AC23270D90B9000E9160 /* Detail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC1E270D90B9000E9160 /* Detail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F6AC24270D90B9000E9160 /* Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC1F270D90B9000E9160 /* Favorite.framework */; };
+		84F6AC25270D90B9000E9160 /* Favorite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC1F270D90B9000E9160 /* Favorite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F6AC26270D90B9000E9160 /* Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC20270D90B9000E9160 /* Profile.framework */; };
+		84F6AC27270D90B9000E9160 /* Profile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC20270D90B9000E9160 /* Profile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F6AC28270D90B9000E9160 /* SearchMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC21270D90B9000E9160 /* SearchMovie.framework */; };
+		84F6AC29270D90B9000E9160 /* SearchMovie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6AC21270D90B9000E9160 /* SearchMovie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +39,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		84B690EF26FED89600F4F2A6 /* Embed Frameworks */ = {
+		84F6AC17270D8F93000E9160 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				84B690E026FED89600F4F2A6 /* Common.framework in Embed Frameworks */,
+				84F6AC27270D90B9000E9160 /* Profile.framework in Embed Frameworks */,
+				84F6AC16270D8F92000E9160 /* Movie.framework in Embed Frameworks */,
+				84F6AC29270D90B9000E9160 /* SearchMovie.framework in Embed Frameworks */,
+				84F6AC25270D90B9000E9160 /* Favorite.framework in Embed Frameworks */,
+				84F6AC1A270D8FF5000E9160 /* Common.framework in Embed Frameworks */,
+				84F6AC1D270D906B000E9160 /* Home.framework in Embed Frameworks */,
+				84F6AC23270D90B9000E9160 /* Detail.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +59,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		68D37A7D6E51DF706B91185B /* Pods-MovieCatalogue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieCatalogue.debug.xcconfig"; path = "Target Support Files/Pods-MovieCatalogue/Pods-MovieCatalogue.debug.xcconfig"; sourceTree = "<group>"; };
+		015DC6AC1B54BE9350494286 /* Pods-MovieCatalogue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieCatalogue.release.xcconfig"; path = "Target Support Files/Pods-MovieCatalogue/Pods-MovieCatalogue.release.xcconfig"; sourceTree = "<group>"; };
+		683AD89511BAFCF52C03D6D5 /* Pods-MovieCatalogue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieCatalogue.debug.xcconfig"; path = "Target Support Files/Pods-MovieCatalogue/Pods-MovieCatalogue.debug.xcconfig"; sourceTree = "<group>"; };
 		843DC5FC27045258007AE7C0 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845E9F3226F1A59D003EEB0F /* MovieCatalogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieCatalogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845E9F3526F1A59D003EEB0F /* MovieCatalogueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCatalogueApp.swift; sourceTree = "<group>"; };
@@ -66,8 +79,14 @@
 		84B690DC26FED89600F4F2A6 /* Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B690DD26FED89600F4F2A6 /* Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B690DE26FED89600F4F2A6 /* SearchMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SearchMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A831FDD7325679EB78DC2A79 /* Pods_MovieCatalogue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieCatalogue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B51AE57D94C6F54A1029A717 /* Pods-MovieCatalogue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieCatalogue.release.xcconfig"; path = "Target Support Files/Pods-MovieCatalogue/Pods-MovieCatalogue.release.xcconfig"; sourceTree = "<group>"; };
+		84F6AC14270D8F92000E9160 /* Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6AC18270D8FF5000E9160 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6AC1B270D906B000E9160 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6AC1E270D90B9000E9160 /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6AC1F270D90B9000E9160 /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6AC20270D90B9000E9160 /* Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6AC21270D90B9000E9160 /* SearchMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SearchMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AFA9D4F4EA6E817537F4A2 /* Pods_MovieCatalogue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieCatalogue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,14 +94,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B690E926FED89600F4F2A6 /* Movie.framework in Frameworks */,
-				84B690E526FED89600F4F2A6 /* Favorite.framework in Frameworks */,
-				84B690DF26FED89600F4F2A6 /* Common.framework in Frameworks */,
-				84B690E326FED89600F4F2A6 /* Detail.framework in Frameworks */,
-				84B690ED26FED89600F4F2A6 /* SearchMovie.framework in Frameworks */,
-				84B690EB26FED89600F4F2A6 /* Profile.framework in Frameworks */,
-				84B690E726FED89600F4F2A6 /* Home.framework in Frameworks */,
-				AF52A2A3AD566E173ED25F46 /* Pods_MovieCatalogue.framework in Frameworks */,
+				84F6AC26270D90B9000E9160 /* Profile.framework in Frameworks */,
+				84F6AC24270D90B9000E9160 /* Favorite.framework in Frameworks */,
+				84F6AC19270D8FF5000E9160 /* Common.framework in Frameworks */,
+				40D412D2F95D9A645B19CE18 /* Pods_MovieCatalogue.framework in Frameworks */,
+				84F6AC15270D8F92000E9160 /* Movie.framework in Frameworks */,
+				84F6AC22270D90B9000E9160 /* Detail.framework in Frameworks */,
+				84F6AC1C270D906B000E9160 /* Home.framework in Frameworks */,
+				84F6AC28270D90B9000E9160 /* SearchMovie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,8 +199,8 @@
 		A19C93BE5161E9AAA40AC40D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				68D37A7D6E51DF706B91185B /* Pods-MovieCatalogue.debug.xcconfig */,
-				B51AE57D94C6F54A1029A717 /* Pods-MovieCatalogue.release.xcconfig */,
+				683AD89511BAFCF52C03D6D5 /* Pods-MovieCatalogue.debug.xcconfig */,
+				015DC6AC1B54BE9350494286 /* Pods-MovieCatalogue.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -189,6 +208,13 @@
 		FEEC5A6126FC2AE733CA4E90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84F6AC1E270D90B9000E9160 /* Detail.framework */,
+				84F6AC1F270D90B9000E9160 /* Favorite.framework */,
+				84F6AC20270D90B9000E9160 /* Profile.framework */,
+				84F6AC21270D90B9000E9160 /* SearchMovie.framework */,
+				84F6AC1B270D906B000E9160 /* Home.framework */,
+				84F6AC18270D8FF5000E9160 /* Common.framework */,
+				84F6AC14270D8F92000E9160 /* Movie.framework */,
 				843DC5FC27045258007AE7C0 /* Core.framework */,
 				84B690D726FED89600F4F2A6 /* Common.framework */,
 				84B690D826FED89600F4F2A6 /* Core.framework */,
@@ -199,7 +225,7 @@
 				84B690DD26FED89600F4F2A6 /* Profile.framework */,
 				84B690DE26FED89600F4F2A6 /* SearchMovie.framework */,
 				848ADE2E26FDAC1900D01FBD /* Core */,
-				A831FDD7325679EB78DC2A79 /* Pods_MovieCatalogue.framework */,
+				F5AFA9D4F4EA6E817537F4A2 /* Pods_MovieCatalogue.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,13 +237,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 845E9F5726F1A5A2003EEB0F /* Build configuration list for PBXNativeTarget "MovieCatalogue" */;
 			buildPhases = (
-				8DAC0A4383083EBF96ADF03D /* [CP] Check Pods Manifest.lock */,
+				DFEC667BF60FA06D5279A987 /* [CP] Check Pods Manifest.lock */,
 				845E9F2E26F1A59D003EEB0F /* Sources */,
 				845E9F2F26F1A59D003EEB0F /* Frameworks */,
 				845E9F3026F1A59D003EEB0F /* Resources */,
 				8485293026F228EE009E0553 /* ShellScript */,
-				84B690EF26FED89600F4F2A6 /* Embed Frameworks */,
-				506A07F894723C4D46C4DB28 /* [CP] Embed Pods Frameworks */,
+				21FD8FDCD6F3CE2CEB30A195 /* [CP] Embed Pods Frameworks */,
+				84F6AC17270D8F93000E9160 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,7 +315,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		506A07F894723C4D46C4DB28 /* [CP] Embed Pods Frameworks */ = {
+		21FD8FDCD6F3CE2CEB30A195 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,7 +349,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then \n    swiftlint \nelse \n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\" \nfi\n";
 		};
-		8DAC0A4383083EBF96ADF03D /* [CP] Check Pods Manifest.lock */ = {
+		DFEC667BF60FA06D5279A987 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -478,7 +504,7 @@
 		};
 		845E9F5826F1A5A2003EEB0F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68D37A7D6E51DF706B91185B /* Pods-MovieCatalogue.debug.xcconfig */;
+			baseConfigurationReference = 683AD89511BAFCF52C03D6D5 /* Pods-MovieCatalogue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -501,7 +527,7 @@
 		};
 		845E9F5926F1A5A2003EEB0F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B51AE57D94C6F54A1029A717 /* Pods-MovieCatalogue.release.xcconfig */;
+			baseConfigurationReference = 015DC6AC1B54BE9350494286 /* Pods-MovieCatalogue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
