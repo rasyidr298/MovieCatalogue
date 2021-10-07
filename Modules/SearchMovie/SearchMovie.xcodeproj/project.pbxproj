@@ -11,8 +11,27 @@
 		84456908270C3C9E001953F6 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456907270C3C9E001953F6 /* SearchViewModel.swift */; };
 		8445690A270C3CA1001953F6 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456909270C3CA1001953F6 /* SearchView.swift */; };
 		8445690C270C3CCC001953F6 /* SearchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8445690B270C3CCC001953F6 /* SearchCard.swift */; };
+		84A38D65270F06A600B376A7 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A38D63270F06A600B376A7 /* Common.framework */; };
+		84A38D66270F06A600B376A7 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A38D63270F06A600B376A7 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84A38D67270F06A600B376A7 /* Movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A38D64270F06A600B376A7 /* Movie.framework */; };
+		84A38D68270F06A700B376A7 /* Movie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A38D64270F06A600B376A7 /* Movie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84B690A426FED3DA00F4F2A6 /* SearchMovie.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B690A226FED3DA00F4F2A6 /* SearchMovie.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84A38D69270F06A700B376A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84A38D66270F06A600B376A7 /* Common.framework in Embed Frameworks */,
+				84A38D68270F06A700B376A7 /* Movie.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02CD0B6802E8D3856A956064 /* Pods_SearchMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +40,8 @@
 		84456907270C3C9E001953F6 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		84456909270C3CA1001953F6 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		8445690B270C3CCC001953F6 /* SearchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCard.swift; sourceTree = "<group>"; };
+		84A38D63270F06A600B376A7 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A38D64270F06A600B376A7 /* Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B6909F26FED3DA00F4F2A6 /* SearchMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SearchMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B690A226FED3DA00F4F2A6 /* SearchMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchMovie.h; sourceTree = "<group>"; };
 		84B690A326FED3DA00F4F2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +53,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C3B49A8205A86323BA4EF5 /* Pods_SearchMovie.framework in Frameworks */,
+				84A38D67270F06A600B376A7 /* Movie.framework in Frameworks */,
+				84A38D65270F06A600B376A7 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +64,8 @@
 		316AEC40458140D70E6822C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84A38D63270F06A600B376A7 /* Common.framework */,
+				84A38D64270F06A600B376A7 /* Movie.framework */,
 				02CD0B6802E8D3856A956064 /* Pods_SearchMovie.framework */,
 			);
 			name = Frameworks;
@@ -125,6 +150,7 @@
 				84B6909B26FED3DA00F4F2A6 /* Sources */,
 				84B6909C26FED3DA00F4F2A6 /* Frameworks */,
 				84B6909D26FED3DA00F4F2A6 /* Resources */,
+				84A38D69270F06A700B376A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

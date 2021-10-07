@@ -9,15 +9,36 @@
 /* Begin PBXBuildFile section */
 		844568E7270C31B2001953F6 /* DetailMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844568E6270C31B2001953F6 /* DetailMovieViewModel.swift */; };
 		844568EC270C33AC001953F6 /* DetailMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844568EB270C33AC001953F6 /* DetailMovieView.swift */; };
+		84A38D7E270F06D600B376A7 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A38D7C270F06D600B376A7 /* Common.framework */; };
+		84A38D7F270F06D600B376A7 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A38D7C270F06D600B376A7 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84A38D80270F06D600B376A7 /* Movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A38D7D270F06D600B376A7 /* Movie.framework */; };
+		84A38D81270F06D600B376A7 /* Movie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A38D7D270F06D600B376A7 /* Movie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84B6907A26FED3BD00F4F2A6 /* Detail.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B6907826FED3BD00F4F2A6 /* Detail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2C50E54BA52B9F695D1C803 /* Pods_Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAAE07BD66085AA5E8E3D92 /* Pods_Detail.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84A38D82270F06D600B376A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84A38D7F270F06D600B376A7 /* Common.framework in Embed Frameworks */,
+				84A38D81270F06D600B376A7 /* Movie.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		20821F31B15478F8CF2BA380 /* Pods-Detail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Detail.release.xcconfig"; path = "../../../MovieCatalogue/Pods/Target Support Files/Pods-Detail/Pods-Detail.release.xcconfig"; sourceTree = "<group>"; };
 		402C46346628118D3BC48239 /* Pods-Detail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Detail.debug.xcconfig"; path = "../../../MovieCatalogue/Pods/Target Support Files/Pods-Detail/Pods-Detail.debug.xcconfig"; sourceTree = "<group>"; };
 		844568E6270C31B2001953F6 /* DetailMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewModel.swift; sourceTree = "<group>"; };
 		844568EB270C33AC001953F6 /* DetailMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieView.swift; sourceTree = "<group>"; };
+		84A38D7C270F06D600B376A7 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A38D7D270F06D600B376A7 /* Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B6907526FED3BD00F4F2A6 /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B6907826FED3BD00F4F2A6 /* Detail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
 		84B6907926FED3BD00F4F2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,6 +51,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C50E54BA52B9F695D1C803 /* Pods_Detail.framework in Frameworks */,
+				84A38D80270F06D600B376A7 /* Movie.framework in Frameworks */,
+				84A38D7E270F06D600B376A7 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +62,8 @@
 		00BC086CD55187D4CA9FD2E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84A38D7C270F06D600B376A7 /* Common.framework */,
+				84A38D7D270F06D600B376A7 /* Movie.framework */,
 				BAAAE07BD66085AA5E8E3D92 /* Pods_Detail.framework */,
 			);
 			name = Frameworks;
@@ -114,6 +139,7 @@
 				84B6907126FED3BD00F4F2A6 /* Sources */,
 				84B6907226FED3BD00F4F2A6 /* Frameworks */,
 				84B6907326FED3BD00F4F2A6 /* Resources */,
+				84A38D82270F06D600B376A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
