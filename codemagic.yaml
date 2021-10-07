@@ -8,7 +8,7 @@ workflows:
         - other
        # Add the group environment variables in Codemagic UI (either in Application/Team variables) - https://docs.codemagic.io/variables/environment-variable-groups/
       vars:
-        XCODE_WORKSPACE: "MovieCatalogue.xcworkspace"  # PUT YOUR WORKSPACE NAME HERE
+        XCODE_WORKSPACE: "MovieCatalogue/MovieCatalogue.xcworkspace"  # PUT YOUR WORKSPACE NAME HERE
         XCODE_SCHEME: "MovieCatalogue" # PUT THE NAME OF YOUR SCHEME HERE
       xcode: latest
       cocoapods: default
